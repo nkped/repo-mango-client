@@ -8,8 +8,7 @@ function App() {
   return (
     <div style={{width:'90%', margin: 'auto auto', textAlign: 'center'}}>
    <h1>Velkommen fra preees layer!</h1>
-   <Button onClick={() => navigate('create')} style={{width: '100%'}}
-  variant='outline-dark' >Next</Button>
+   <Button onClick={() => navigate('create')} >Next</Button>
     </div>
   );
 }
