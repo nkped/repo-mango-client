@@ -7,6 +7,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 import App from './App';
 import CreatePost from './components/CreatePost.jsx';
+import Posts from './components/Posts.jsx';
 
 
 
@@ -17,6 +18,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/create" element={<CreatePost />} />
+      <Route path="/create/posts" element={<Posts />} />
 
     
     </Routes>

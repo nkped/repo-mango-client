@@ -1,6 +1,6 @@
 import {Button, Form } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
-import { useState, useEffect } from 'react' 
+import { useState } from 'react' 
 import axios from 'axios'
 
 function CreatePost() {
@@ -26,12 +26,9 @@ const handleClick = (event) => {
     axios.post('/create', post)
     .then((res) => console.log(res))
     .catch((err) => console.log(err))
+    navigate('/posts')
 }
-/*
-useEffect(() => {
-    console.log(post)
-}, [post])
-*/
+
     return (
         <div style={{width:'90%', margin: 'auto auto', textAlign: 'center'}}>
             <h1>CreatePost</h1>
